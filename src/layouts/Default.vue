@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar elevation="0">
+    <v-app-bar elevation="0" class="d-print-none">
       <v-toolbar-items>
         <v-btn text large class="title-btn" to="/">Matt Law [.dev]</v-btn>
       </v-toolbar-items>
@@ -32,10 +32,6 @@ export default {
 nav {
   background: none !important;
   box-shadow: none !important;
-}
-
-.title {
-  font-size: 2em !important;
 }
 
 #app {

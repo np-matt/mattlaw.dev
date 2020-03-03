@@ -1,3 +1,7 @@
+@page {
+  margin: 0mm;
+}
+
 .v-application {
   h1,
   h2,
@@ -33,5 +37,38 @@
   code {
     box-shadow: none;
     all: unset;
+  }
+
+  @media print {
+    h1 {
+      font-size: 3.5em;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 0.8em;
+      line-height: 1.3rem;
+    }
+
+    li {
+      font-size: 0.8em;
+    }
+
+    .body-1 {
+      line-height: 1.4rem;
+    }
+
+    .title {
+      line-height: 2.2rem;
+    }
   }
 }

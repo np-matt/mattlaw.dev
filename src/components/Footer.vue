@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer class="d-print-none">
     <span>
       &copy; {{ new Date().getFullYear() }}
       <a href="/privacy-policy">Prvacy Policy</a>

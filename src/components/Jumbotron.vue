@@ -29,7 +29,7 @@
       </v-btn>
     </v-col>
     <v-col md="5" cols="12">
-      <v-row row wrap align-content="center" class="text-center ">
+      <v-row align="center" class="text-center" justify="center">
         <v-col>
           <v-avatar size="256">
             <img
@@ -43,7 +43,6 @@
             <li>Often Programmer</li>
             <li>Occasional DIY-er</li>
             <li>Infrequent Cricketer</li>
-            <li>Wistful Game Dev</li>
           </ul>
         </v-col>
       </v-row>

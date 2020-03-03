@@ -1,5 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
+import '@mdi/font/css/materialdesignicons.css';
 import Vuetify from 'vuetify/lib';
 import colors from 'vuetify/es5/util/colors';
 
@@ -39,7 +40,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     theme: {
       themes: {
         light: {
-          primary: '#5f9ea0',
+          primary: '#067BC2',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,

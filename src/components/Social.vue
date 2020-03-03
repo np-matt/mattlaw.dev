@@ -1,10 +1,10 @@
 <template>
   <v-layout>
     <v-flex shrink>
-      <v-btn flat fab>
+      <v-btn icon fab>
         <i class="fab fa-facebook" @click.prevent="facebook"></i>
       </v-btn>
-      <v-btn flat fab>
+      <v-btn icon fab>
         <i class="fab fa-twitter" @click.prevent="twitter"></i>
       </v-btn>
     </v-flex>

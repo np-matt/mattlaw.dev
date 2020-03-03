@@ -2,7 +2,10 @@
   <v-row justify="center" class="fill-height">
     <v-col md="8">
       <v-row cols="12" justify="center" align="center">
-        <v-col class="headline-text text-center">
+        <v-col
+          class="headline-text text-center"
+          :class="{ 'headline-text-sm': $vuetify.breakpoint.smAndDown }"
+        >
           <p>ABOUT ME</p>
         </v-col>
       </v-row>
@@ -22,6 +25,11 @@
             NodeJS, .NET, VueJS, WebGL &amp; pretty much anything that takes my
             fancy.
           </p>
+          <p>
+            <g-link to="/about2" class="text-decoration-none">
+              Want to know more?
+            </g-link>
+          </p>
         </v-col>
       </v-row>
     </v-col>
@@ -29,6 +37,10 @@
 </template>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
+
 .fill-height {
   min-height: 100vh;
 }
@@ -48,7 +60,7 @@ p {
   z-index: 99;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 9em;
   position: relative;
   overflow-y: hidden;
   background: url('/img/nottingham.webp') center;
@@ -57,6 +69,10 @@ p {
   -webkit-background-clip: text;
   color: transparent;
   margin: 30px 0;
+}
+
+.headline-text-sm {
+  font-size: 5.5em;
 }
 
 .intro p {
