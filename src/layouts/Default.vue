@@ -1,8 +1,6 @@
 <template>
   <v-content>
-    <transition name="fade" appear>
-      <slot />
-    </transition>
+    <slot />
   </v-content>
 </template>
 

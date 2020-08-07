@@ -18,6 +18,10 @@ h1 {
     line-height: 5rem;
   }
 
+  @extend .drop;
+}
+
+.drop {
   text-shadow: 1px 1px 1px var(--v-accent-base),
     2px 2px 1px var(--v-accent-base), 3px 3px 1px var(--v-accent-base);
 }

@@ -1,6 +1,6 @@
 <template>
   <v-app :class="{ 'bg-green': $route.name === 'home' }">
-    <v-app-bar color="primary" dark dense fixed :value="showBar" app>
+    <v-app-bar color="primary" dark dense fixed :value="showBar" :app="isApp">
       <v-toolbar-items>
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
@@ -115,6 +115,13 @@ export default {
     }
   ) {
     const showBar = ref($route.name !== 'home');
+    const isApp = ref($route.path !== '/about');
+
+    console.log($route);
+
+    watch('$route.path', newVal => {
+      isApp.value = newVal !== '/about';
+    });
 
     watch('$route.name', newVal => {
       showBar.value = newVal !== 'home';
@@ -129,6 +136,7 @@ export default {
       mdiNewspaper,
       mdiCodeJson,
       showBar,
+      isApp,
       isDev: process.env.NODE_ENV !== 'production',
     };
   },
